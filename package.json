@@ -1,0 +1,23 @@
+{
+  "name": "node-server",
+  "version": "0.0.1",
+  "description": "A simple node server",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dengeist/node-server.git"
+  },
+  "author": "Elias Mason",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dengeist/node-server/issues"
+  },
+  "homepage": "https://github.com/dengeist/node-server#readme"
+}
