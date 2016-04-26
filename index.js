@@ -1,12 +1,16 @@
 var express = require("express");
 var app = express();
-var person = {
-    name: 'Joe Schmoe',
-    hobbies: 'Being a schmuck.',
-    profession: 'Government Issued Supersoldier'
-};
 
-app.get('/', function(request, response){
-  response.send(person.name);
+
+
+app.get('/headers', function(request, response) {
+    response.send(request.headers);
 });
+
+app.get('/headers/:header_name', function(request, response) {
+    var headers = request.headers;
+    var headerName = request.params.header_name;
+    response.send(headers[headerName]);
+});
+
 app.listen(8080);
